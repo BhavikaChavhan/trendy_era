@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Era - Always be different</title>
+    <link rel="shortcut icon" href="./assets/img/trendy-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!--Header Section Start-->
+    <div class=" flex flex-wrap items-center justify-around">
+        <a href="#javascript.void()">
+            <img src="./assets/img/trendy-removebg-preview.png" class="h-14" alt="Flowbite Logo" />
+
+        </a>
+        <div class="flex md:order-2">
+            <div class="cart flex gap-6 items-center font-medium ">
+                <div class="hover:text-indigo-600 transition-all duration-300 hover:cursor-pointer">
+                    <i class="ri-user-3-line text-lg"></i> Account
+                </div>
+                <div class="hover:text-indigo-600 transition-all duration-300 hover:cursor-pointer">
+                    <i class="ri-heart-3-line text-lg"></i> Wishlist
+                </div>
+                <div class="hover:text-indigo-600 transition-all duration-300 hover:cursor-pointer">
+                    <i class="ri-shopping-cart-line text-lg"></i> Cart
+                </div>
+            </div>
+        </div>
+        <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-search">
+
+            <ul class="flex flex-col  mt-4 font-medium rounded-lg   md:bg-white p-2">
+                <form class="search border-2 border-indigo-600 rounded flex flex-wrap max-w-screen-sm">
+                    <input type="text" name="search" placeholder="Search for items..." class=" flex-1  text-xs p-3">
+
+                    <select name="categories"
+                        class=" border-l border-indigo-600 focus:outline-0 font-normal text-sm sm:invisible md:visible">
+                        <option value="all-Categories">All Categories</option>
+                        <option value="mens">Mens</option>
+                        <option value="womens">Womens</option>
+                        <option value="kids">Kids</option>
+                    </select>
+
+                    <button type="submit" class="bg-[#3F51B5] ">
+                        <i class="ri-search-line text-white p-4"></i>
+                    </button>
+                </form>
+            </ul>
+        </div>
+    </div>
+    <!-- header section end -->
+
+    <!--Navbar Section Start-->
+    <nav class=" px-10 justify-around border-b py-4">
+        <div class=" mx-auto flex items-center justify-between space-between">
+            <i class="ri-menu-line p-2 text-2xl border rounded bhav"></i>
+            <button id="menu-toggle" class=" block sm:hidden">
+                <i class="ri-menu-2-line p-2 text-2xl border rounded "></i>
+            </button>
+
+            <div id="navbar-menu" class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 ">
+                <a href="#" class="hover:text-gray-400 text-sm font-medium">Home</a>
+
+                <select name="category" class=" text-center hover:underline text-sm font-medium">
+                    <option value="all-Categories">Category</option>
+                    <option value="mens">Mens</option>
+                    <option value="womens">Womens</option>
+                    <option value="kids">Kids</option>
+                </select>
+                <a href="#" class="hover:text-gray-400 text-sm font-medium">Services</a>
+                <a href="#" class="hover:text-gray-400 text-sm font-medium">Contact</a>
+                <a href="#" class="hover:text-gray-400 text-sm font-medium">Services</a>
+                <a href="#" class="hover:text-gray-400 text-sm font-medium">Contact</a>
+            </div>
+
+            <div class="relative location bhavika">
+                <div class="flex border p-2 rounded w-48 justify-between location-menu cursor-pointer">
+                    <span>
+                        <i class="ri-map-pin-line"></i>
+                        New York</span>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+
+                <div class="absolute hidden border p-2 rounded w-48 space-y-2 space-t-2 z-[99] location-list bg-white ">
+                    <div class="border p-2 rounded w-auto cursor-pointer">
+                        <span>
+                            <i class="ri-map-pin-line"></i>
+                            New York
+                        </span>
+                    </div>
+                    <div class="border p-2 rounded w-auto cursor-pointer">
+                        <span>
+                            <i class="ri-map-pin-line"></i>
+                            New York
+                        </span>
+                    </div>
+                    <div class="border p-2 rounded w-auto cursor-pointer">
+                        <span>
+                            <i class="ri-map-pin-line"></i>
+                            New York
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar Section End-->
+
+    <!--Banner Section Start-->
+    <section class="hero">
+        <div class="swiper mySwiper m-8 ">
+            <div class="swiper-wrapper overflow:hidden">
+                <div
+                    class="swiper-slide bg-[#F3F3F3] rounded-2xl bg-[url('./assets/img/banner1.jpg')] bg-cover bg-center relative">
+                    <img src="./assets/img/leaf1.png" alt="leaf"
+                        class="absolute -start-14 h-64 top-6 anime animate-bounce">
+                    <img src="./assets/img/leaf1.png" alt="leaf" class="absolute -start-6 h-52 top-8 anime">
+                    <img src="./assets/img/leaf2.png" alt="leaf" class="absolute -end-6 h-52 bottom-8 anime1">
+                    <img src="./assets/img/leaf2.png" alt="leaf" class="absolute -end-10 h-64 bottom-6 anime1">
+                    <div class="absolute lg:start-28 sm:start-4 sm:text-left" data-aos="fade-up">
+                        <h5 class="text-xl mb-4 font-bold text-[#33373A] sm:text-left">
+                            <span class="text-[#3f51b5] border-b-2 border-[#3F51B5]">100%</span>
+                            Cotton Fabric
+                        </h5>
+                        <h1 class="font-bold text-4xl sm:text-left sm:w-72 mb-4 leading-tight ">
+                            Fashion Sale for Women's
+                        </h1>
+                        <p class="sm:text-left text-[#818181] sm:w-3/6 text-md leading-7 mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut enim alias nemo, a amet quia?
+                        </p>
+                        <button
+                            class="bg-indigo-700 text-left p-2 px-4 rounded text-white font-bold text-sm font-semibold hover:bg-black transition-all duration-500">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide bg-[#F3F3F3] rounded-2xl bg-[url('./assets/img/banner2.jpg')] bg-cover bg-center relative">
+                    <img src="./assets/img/leaf1.png" alt="leaf"
+                        class="absolute -start-14 h-64 top-6 anime animate-bounce">
+                    <img src="./assets/img/leaf1.png" alt="leaf" class="absolute -start-6 h-52 top-8 anime">
+                    <img src="./assets/img/leaf2.png" alt="leaf" class="absolute -end-6 h-52 bottom-8 anime1">
+                    <img src="./assets/img/leaf2.png" alt="leaf" class="absolute -end-10 h-64 bottom-6 anime1">
+
+                    <div class="absolute lg:start-28 sm:start-4 sm:text-left" data-aos="fade-up">
+                        <h5 class="text-xl mb-4 font-bold text-[#33373A] sm:text-left ">
+                            <span class="text-[#3f51b5] border-b-2 border-[#3F51B5]">100%</span>
+                            Cotton Fabric
+                        </h5>
+                        <h1 class="font-bold text-4xl sm:text-left sm:w-72 mb-4 leading-tight">
+                            Fashion Sale for Women's
+                        </h1>
+                        <p class="sm:text-left text-[#818181] sm:w-3/6 text-md leading-7 mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut enim alias nemo, a amet quia?
+                        </p>
+                        <button
+                            class="bg-indigo-700 text-left p-2 px-4 rounded text-white font-bold text-sm font-semibold hover:bg-black transition-all duration-500">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--Banner Section End-->
+
+    <!-- Category section start -->
+    <div class="category">
+        <div class="swiper mySwiper1 px-8">
+            <div class="swiper-wrapper  mt-14 " data-aos="fade-up">
+                <div class="swiper-slide p-5 ">
+                    <div
+                        class="relavtive text-center rounded-2xl bg-[#f7f7f8;] w-52 h-32 place-content-center cursor-grab hover:bg-[#dddde8]">
+                        <p>Shirt</p>
+                        <p class="text-[#777] text-sm">(67 items)</p>
+                    </div>
+                    <div class="absolute rounded-full content-start -top-6 bg-[#ffeae9] border-8 border-[#fff]"><i
+                            class="fa-solid fa-shirt p-4 text-3xl hover:bg-[#e2a7a4] hover:rounded-full cursor-grab"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide  p-5">
+                    <div
+                        class="text-center rounded-2xl bg-[#f7f7f8;] w-52 h-32 place-content-center cursor-grab hover:bg-[#dddde8]">
+                        <p>Hats</p>
+                        <p class="text-[#777] text-sm">(81 items)</p>
+                    </div>
+                    <div class="absolute rounded-full content-start -top-6 bg-[#fde1f5] border-8 border-[#fff] "><i
+                            class="fa-solid fa-hat-cowboy p-4 text-3xl hover:bg-[#f09bd7] hover:rounded-full cursor-grab"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide  p-5">
+                    <div
+                        class="text-center rounded-2xl bg-[#f7f7f8;] w-52 h-32 place-content-center cursor-grab hover:bg-[#dddde8]">
+                        <p>Boot</p>
+                        <p class="text-[#777] text-sm">(32 items)</p>
+                    </div>
+                    <div class="absolute rounded-full content-start -top-6 bg-[#e2fde2] border-8 border-[#fff] "><i
+                            class="fa-solid fa-shoe-prints p-4 text-3xl hover:bg-[#9fcf9f] hover:rounded-full cursor-grab"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide  p-5">
+                    <div
+                        class="text-center rounded-2xl bg-[#f7f7f8;] w-52 h-32 place-content-center cursor-grab hover:bg-[#dddde8]">
+                        <p>Tops</p>
+                        <p class="text-[#777] text-sm">(78 items)</p>
+                    </div>
+                    <div class="absolute rounded-full content-start -top-6 bg-[#f9f9d9] border-8 border-[#fff] "><i
+                            class="fa-solid fa-shirt p-4 text-3xl hover:bg-[#f6f686] hover:rounded-full cursor-grab"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide p-5">
+                    <div
+                        class="text-center rounded-2xl bg-[#f7f7f8;] w-52 h-32 place-content-center cursor-grab hover:bg-[#dddde8]">
+                        <p>Vest</p>
+                        <p class="text-[#777] text-sm">(64 items)</p>
+                    </div>
+                    <div class="absolute rounded-full content-start -top-6 bg-[#ffeae9] border-8 border-[#fff] "><i
+                            class="fa-solid fa-vest p-4 text-3xl hover:bg-[#e2a7a4] hover:rounded-full cursor-grab"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide p-5">
+                    <div
+                        class="text-center rounded-2xl bg-[#f7f7f8;] w-52 h-32 place-content-center cursor-grab hover:bg-[#dddde8]">
+                        <p>Socks</p>
+                        <p class="text-[#777] text-sm">(24 items)</p>
+                    </div>
+                    <div class="absolute rounded-full content-start -top-6 bg-[#ecf0ff] border-8 border-[#fff] "><i
+                            class="fa-solid fa-socks p-4 text-3xl hover:bg-[#93a9fa] hover:rounded-full cursor-grab"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide  p-5">
+                    <div
+                        class="text-center rounded-2xl bg-[#f7f7f8;] w-52 h-32 place-content-center cursor-grab hover:bg-[#dddde8]">
+                        <p>Sunglasses</p>
+                        <p class="text-[#777] text-sm">(46 items)</p>
+                    </div>
+                    <div class="absolute rounded-full content-start -top-6 bg-[#f9f9d9] border-8 border-[#fff]"><i
+                            class="fa-solid fa-glasses p-4 text-3xl hover:bg-[#f6f686] hover:rounded-full cursor-grab"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Category section End -->
+
+    <!-- New Arrival section Start -->
+    <section>
+        <div class="cloth justify-between sm:px-16 sm:flex py-5 padd">
+            <div>
+                <h1 class="text-2xl font-semibold">New Arrivals
+                    <h5 class="text-gray-400 ">Browse The Collection of Top Products</h5>
+                </h1>
+            </div>
+            <div class="flex items-center ">
+                <div class="w-full max-w-xs">
+
+                    <div
+                        class="mt-1 block w-32 px-3 py-2 border border-gray-300 rounded-md bg-white text-center text-sm font-medium text-gray-700 flex">
+                        <h6 class="pr-2 font-bold flex">390
+                            <p class="font-normal pl-2">Days</p>
+                        </h6>
+                        <span id="current-time"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrival sm:px-14">
+            <div class="swiper mySwiper2 ">
+                <div class="swiper-wrapper" data-aos="fade-up">
+                    <div class="swiper-slide p-3">
+                        <div class=" w-80 h-auto  cursor-grab hover:bg-[#dddde8] border">
+                            <img src="./assets/img/1.jpg" alt="" class="border p-2 w-80 h-60">
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">Womens Tops</p>
+                                <p class="text-left">Colorfull Top For Women</p>
+                                <p class="text-left font-bold">$6.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide p-3">
+                        <div class=" w-80 h-auto  cursor-grab hover:bg-[#dddde8] border">
+                            <img src="./assets/img/mens.jpg" alt="" class="border p-2  w-80 h-60">
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">Men T-shirt</p>
+                                <p class="text-left">Green T-shirt For Men</p>
+                                <p class="text-left font-bold">$11.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide  p-3">
+                        <div class="w-80 h-auto  cursor-grab hover:bg-[#dddde8] border">
+                            <img src="./assets/img/6.jpg" alt="" class="border p-2 w-80 h-60">
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">Shorts</p>
+                                <p class="text-left">Girl Nightdress Shorts</p>
+                                <p class="text-left font-bold">$57.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide p-3">
+                        <div class=" w-80 h-auto  cursor-grab hover:bg-[#dddde8] border">
+                            <img src="./assets/img/kids.jpg" alt="" class="border p-2 w-80 h-60">
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">Kids</p>
+                                <p class="text-left">Pink T-Shirt For Girl</p>
+                                <p class="text-left font-bold">$29.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide p-3">
+                        <div class=" w-80 h-auto  cursor-grab hover:bg-[#dddde8] border ">
+                            <img src="./assets/img/images.jpeg" alt="" class="border p-2 h-60 w-80">
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                                <p class="text-left text-lg">Black T-Shirt For Women</p>
+                                <p class="text-left font-bold">$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--New Arrrival section End -->
+
+    <!-- Facility Section Start -->
+    <div class="view sm:px-14">
+        <div class="swiper mySwiper3 ">
+            <div class="swiper-wrapper  mt-12 " data-aos="fade-up">
+                <div class="swiper-slide p-3">
+                    <div
+                        class="text-center bg-[#f7f7f8;] w-96 h-44 place-content-center hover:bg-[#dddde8] border rounded">
+                        <i class="ri-red-packet-line text-4xl text-[#3f51b5]"></i>
+                        <p class="font-bold">Product Packing</p>
+                        <p class="text-[#777] text-base px-4">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide p-3">
+                    <div
+                        class="text-center bg-[#f7f7f8;] w-96 h-44 place-content-center hover:bg-[#dddde8] border rounded">
+                        <i class="ri-customer-service-2-line text-4xl text-[#3f51b5]"></i>
+                        <p class="font-bold">24X7 Support</p>
+                        <p class="text-[#777] text-base px-4">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide p-3">
+                    <div
+                        class="text-center bg-[#f7f7f8;] w-96 h-44 place-content-center hover:bg-[#dddde8] border rounded">
+                        <i class="ri-truck-line text-4xl text-[#3f51b5]"></i>
+                        <p class="font-bold">Delivery in 5 Days</p>
+                        <p class="text-[#777] text-base px-4">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide p-3">
+                    <div
+                        class="text-center bg-[#f7f7f8;] w-96 h-44 place-content-center hover:bg-[#dddde8] border rounded">
+                        <i class="ri-money-dollar-box-line text-4xl text-[#3f51b5]"></i>
+                        <p class="font-bold">Payment Secure</p>
+                        <p class="text-[#777] text-base px-4">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Facility Section End -->
+
+    <!-- offer section Start -->
+    <div class="mt-14">
+        <div class="relative width-cover h-96 place-items-center">
+            <div class="bg-[#F3F3F3] rounded-2xl bg-[url('./assets/img/banner1.jpg')] bg-cover bg-center">
+                <img src="./assets/img/Fashion1.png" alt="Image 1"
+                    class="absolute inset-0 w-full h-full object-cover animate-fadeInOut">
+                <img src="./assets/img/fash4.png" alt="Image 2"
+                    class="absolute inset-0 w-full h-full object-cover animate-fadeInOut animation-delay-2000">
+            </div>
+
+            <div class="absolute bg-[#fff] inset-y-8 w-auto sm:w-72 sm:start-14 m-5 rounded-lg place-items-center p-2 wid"
+                data-aos="fade-up">
+                <h5 class="text-lg mb-4 text-[#1416BD] sm:text-left">40%
+                    <span class="text-[#777] text-sm">OFF</span>
+                </h5>
+                <p class="font-bold mb-3 ">
+                    Great deal on Womens Fashion.
+                </p>
+                <p class="sm:text-left text-[#818181] text-sm  mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut enim alias nemo, a amet quia?
+                </p>
+                <span id="current-time"></span>
+                <div id="clock"
+                    class="flex space-x-4 text-sm w-44 place-content-center rounded border font-semibold text-gray-800">
+                    <div class="flex flex-col items-center">
+                        <span id="day" class="text-xl"></span>
+                        <span class="text-xs text-gray-500">days</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span id="hour" class="text-xl"></span>
+                        <span class="text-xs text-gray-500">hour</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span id="minute" class="text-xl"></span>
+                        <span class="text-xs text-gray-500">minute</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span id="second" class="text-xl"></span>
+                        <span class="text-xs text-gray-500">second</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- offer section End -->
+
+    <!-- shop section start -->
+    <div class="view sm:px-14">
+        <div class="swiper mySwiper4 ">
+            <div class="swiper-wrapper  mt-12 " data-aos="fade-up">
+                <div class="swiper-slide p-3">
+                    <div
+                        class=" relavtive text-center bg-[#f7f7f8;] w-96 h-48 place-content-center hover:bg-[#dddde8] border rounded  bg-[url('./assets/img/shop1.jpg')] bg-cover">
+                        <div class="absolute top-12 text-left pl-4">
+                            <p class="text-lg font-medium">Childern<br>
+                                Latest Fashion<br>
+                            </p>
+                            <p class="text-[#3f51b5] font-bold my-2">15% <span class="text-xs">Off</span></p>
+                            <button
+                                class=" text-white rounded-lg bg-[#3f51b5] text-xs font-semibold p-2 hover:bg-black transition-all duration-500">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-3">
+                    <div
+                        class=" relavtive text-center bg-[#f7f7f8;] w-96 h-48 place-content-center hover:bg-[#dddde8] border rounded  bg-[url('./assets/img/shop2.jpg')] bg-cover">
+                        <div class="absolute top-12 text-left pl-4">
+                            <p class="text-lg font-medium">Cotton<br>
+                                Jacket For Mens <br>
+                            </p>
+                            <p class="text-[#3f51b5] font-bold my-2">33% <span class="text-xs">Off</span></p>
+                            <button
+                                class=" text-white rounded-lg bg-[#3f51b5] text-xs font-semibold p-2 hover:bg-black transition-all duration-500">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-3">
+                    <div
+                        class=" relavtive bg-[#f7f7f8;] w-96 h-48 hover:bg-[#dddde8] border rounded  bg-[url('./assets/img/shop3.jpg')] bg-cover">
+                        <div class="absolute top-12 text-left pl-4">
+                            <p class="text-lg font-medium">Womens<br>
+                                Summer Fashion <br>
+                            </p>
+                            <p class="text-[#3f51b5] font-bold my-2">25% <span class="text-xs">Off</span></p>
+                            <button
+                                class=" text-white rounded-lg bg-[#3f51b5] text-xs font-semibold p-2 hover:bg-black transition-all duration-500">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- shop section end -->
+
+    <!-- Top Collection Start -->
+    <section class="collection mt-12">
+        <div class=" justify-between sm:px-16 sm:flex py-5 padd">
+            <div>
+                <h1 class="text-2xl font-semibold">Top Collection
+                    <h5 class="text-gray-400 ">Shop online for top collection and get free shipping!</h5>
+                </h1>
+            </div>
+            <div class="flex items-center ">
+                <div class="w-full max-w-xs">
+                    <div class="mt-1 text-center text-sm font-medium text-gray-700 flex gap-2 auto-col-max">
+                        <a href="#"
+                            class="border px-3 py-2 rounded-lg hover:border-[#000] sm:w-1/2 lg:w-1/3 p-4">All</a>
+                        <a href="#"
+                            class="border px-3 py-2 rounded-lg hover:border-[#000] sm:w-1/2 lg:w-1/3 p-4">Womens</a>
+                        <a href="#"
+                            class="border px-3 py-2 rounded-lg hover:border-[#000] sm:w-1/2 lg:w-1/3 p-4">Mens</a>
+                        <a href="#"
+                            class="border px-3 py-2 rounded-lg hover:border-[#000] sm:w-1/2 lg:w-1/3 p-4">Kids</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap place-content-center ">
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2 bg-cover bg-no-repeat">
+                <img src="./assets/img/1.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/2.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/3.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/1.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/2.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/3.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/1.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/2.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/3.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+            <div class="w-full sm:w-1/3 lg:w-1/6 md:w-1/4 p-4 visi border m-2  bg-cover bg-no-repeat">
+                <img src="./assets/img/2.jpg" alt="" class="transition duration-300 ease-in-out hover:scale-110 pb-2">
+                <p class="text-[#777] text-sm text-left">T-shirt</p>
+                <p class="text-left text-sm text-gray-500 my-2">Black T-Shirt For Women</p>
+                <p class="text-left font-bold">$35.00</p>
+            </div>
+        </div>
+    </section>
+    <!-- Top Collection End -->
+
+    <!-- Latest News Section Start -->
+    <section class="latest mt-14 ">
+        <div class="text-center ">
+            <p class="font-bold text-3xl mb-3">Latest News</p>
+            <p class="text-gray-700 text-md md:px-28">Lorem ipsum, dolori repudiandae consequatur tempore dolorem,
+                suscipit repellendus. Lorem ipsum dolor sit. </p>
+        </div>
+
+        <div class="amine sm:px-14">
+            <div class="swiper mySwiper5 place-items-center">
+                <div class="swiper-wrapper  mt-12 " data-aos="fade-up">
+                    <div class="swiper-slide rounded ">
+                        <div class=" w-96 h-96  cursor-grab hover:bg-[#dddde8] rounded border">
+                            <div class="relative">
+                                <img src="./assets/img/lady1.jpg" alt="" class="rounded">
+                                <div
+                                    class="absolute bg-black w-12 h-14 opacity-75 rounded text-white bottom-4 right-4 font-bold ">
+                                    <p>10 oct</p>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">By Admin | Snacks</p>
+                                <p class="text-left text-lg font-semibold my-2">Dolori repudiandae consequatur suscipit
+                                    repellendus.</p>
+                                <p class="text-left font-bold text-xs text-[#3f51b5]">Read More <i
+                                        class="fa-solid fa-arrow-right-long font-medium text-[#3f51b5]"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide rounded ">
+                        <div class=" w-96 h-96  cursor-grab hover:bg-[#dddde8] rounded border">
+                            <div class="relative">
+                                <img src="./assets/img/lady2.jpg" alt="" class="rounded">
+                                <div
+                                    class="absolute bg-black w-12 h-14 opacity-75 rounded text-white bottom-4 right-4 font-bold ">
+                                    <p>12 oct</p>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">By Admin | Snacks</p>
+                                <p class="text-left text-lg font-semibold my-2">Dolori repudiandae consequatur suscipit
+                                    repellendus.</p>
+                                <p class="text-left font-bold text-xs text-[#3f51b5]">Read More <i
+                                        class="fa-solid fa-arrow-right-long font-medium text-[#3f51b5]"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide rounded ">
+                        <div class=" w-96 h-96  cursor-grab hover:bg-[#dddde8] rounded border">
+                            <div class="relative">
+                                <img src="./assets/img/lady3.jpg" alt="" class="rounded ">
+
+                                <div
+                                    class="absolute bg-black w-12 h-14 opacity-75 rounded text-white bottom-4 right-4 font-bold ">
+                                    <p>22 jan</p>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">By Admin | Snacks</p>
+                                <p class="text-left text-lg font-semibold my-2">Dolori repudiandae consequatur suscipit
+                                    repellendus.</p>
+                                <p class="text-left font-bold text-xs text-[#3f51b5]">Read More <i
+                                        class="fa-solid fa-arrow-right-long font-medium text-[#3f51b5]"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide rounded ">
+                        <div class=" w-96 h-96  cursor-grab hover:bg-[#dddde8] rounded border">
+                            <div class="relative">
+                                <img src="./assets/img/lady4.jpg" alt="" class="rounded">
+                                <div
+                                    class="absolute bg-black w-12 h-14 opacity-75 rounded text-white bottom-4 right-4 font-bold ">
+                                    <p>03 sep</p>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-[#777] text-sm text-left">By Admin | Snacks</p>
+                                <p class="text-left text-lg font-semibold my-2">Dolori repudiandae consequatur tempore
+                                    dolorem, suscipit repellendus.</p>
+                                <p class="text-left font-bold text-xs text-[#3f51b5]">Read More <i
+                                        class="fa-solid fa-arrow-right-long font-medium text-[#3f51b5]"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Latest News Section End -->
+
+
+    <!-- image section start -->
+    <div class="shot_photo">
+        <div class="swiper mySwiper6 sm:mx-8">
+            <div class="swiper-wrapper  mt-20 ">
+                <div class="swiper-slide p-5 ">
+                    <div>
+                        <img src="./assets/img/shot1.jpg" alt="shot" class="w-56 h-38 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <div>
+                        <img src="./assets/img/shot2.jpg" alt="shot" class="w-56 h-38 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <div>
+                        <img src="./assets/img/shot3.jpg" alt="shot" class="w-56 h-38 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <div>
+                        <img src="./assets/img/shot4.jpg" alt="shot" class="w-56 h-38 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <div>
+                        <img src="./assets/img/shot5.jpg" alt="shot" class="w-56 h-38 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <div>
+                        <img src="./assets/img/shot6.jpg" alt="shot" class="w-56 h-38 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <div>
+                        <img src="./assets/img/shot7.jpg" alt="shot" class="w-56 h-38 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <div>
+                        <img src="./assets/img/shot8.jpg" alt="shot" class="w-56 h-38 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- image section end -->
+
+    <!-- footer section Start -->
+    <p class="text-lg font-bold text-center text-[#FF0000] p-2">.....Created by Bhavika Chavhan.....</p>
+    <!-- footer section end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
